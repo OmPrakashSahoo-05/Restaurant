@@ -1,0 +1,34 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://media.istockphoto.com/id/1211547141/photo/modern-restaurant-interior-design.jpg?s=612x612&w=0&k=20&c=CvJmHwNNwfFzVjj1_cX9scwYsl4mnVO8XFPi0LQMTsw=");
+   background-size: 100%;
+   background-position: center;
+    
+    background-repeat: no-repeat;
+
+    
+}
+
+.collapse{
+    background-color: orange;
+}
+.navbar-brand{
+    background-color: green;
+}
+.container-fluid{
+    background-color: orange;
+}
+.navbar{
+    background-color: orange;
+}
+.collapse ul li a{
+    transition: background(0.5s);  
+}
+.collapse ul li a:hover{
+    background-color: green;
+}

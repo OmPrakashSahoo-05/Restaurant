@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./partials/head') %>
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+    
+</head>
+<body>
+    <div class="bg">
+        <%- include('./partials/nav') %>
+        <div class="box">
+        <form action="/availiability" method="post">
+            <div class="date">
+                <label for="datePicker">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+    
+            <div class="time">
+                <label for="timeSelect">Select Time:</label>
+                <select id="time" name="time" required>
+                    <option value="10:00 AM">10am</option>
+                    <option value="11:00 AM">11am</option>
+                    <option value="12:00 PM">12 noon</option>
+                    <option value="1:00 PM">1pm</option>
+                    <option value="2:00 PM">2pm</option>
+                    <option value="3:00 PM">3pm</option>
+                    <option value="4:00 PM">4pm</option>
+                    <option value="6:00 PM">6pm</option>
+                    <option value="7:00 PM">7pm</option>
+                    <option value="8:00 PM">8pm</option>
+                    <option value="9:00 PM">9pm</option>
+                    <option value="10:00 PM">10pm</option>
+                </select>
+            </div>
+            <button type="submit"class="btn">Submit</button>
+        </form>
+    </div>
+   
+    <%- include('./partials/script') %>
+    
+</body>
+</html>
